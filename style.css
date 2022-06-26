@@ -13,7 +13,7 @@
 header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/Farm.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/new\ farm.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -179,7 +179,7 @@ button:hover{
 
 @media screen and (max-width:768px) {
     header{
-        height: 110vh;
+        height: 100vh;
     }
     .hero-texts h1{
         font-size: 32px;
@@ -527,148 +527,48 @@ button:hover{
     
 }
 
-
-.service-home{
-    position: relative;
-    width: 95%;
-    height: 50vh;
-    margin-top: 70px;
-    top: 0;
-    left: 35px;
-    background-size: cover;
-    background: transparent;
-    background-position: center center;
-    border-radius: 20px;
-}   
-
-.image-row{
+.row{
+    margin-top: 0%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin-left: 100px;
-    margin-right: 100px;
+    justify-content: center;
 }
-
-
-.image-card{
-    padding: 30px 25px;
-    margin-top: -50px;
-    width: calc( 35% - 35px);
-    border-radius: 6px;
-    background: white;
-    box-shadow: 0 0 5px 0px #72a188;
-    user-select: none;
-    cursor: pointer;
-    transition: all 0.5s ease;   
-}
-.image-card:hover{
-    background-color: #deeeee;
-    box-shadow: 0 0 20px 0px #deeeee;
-    
-}
-.image-card h1{
+.grid-col{
+    flex-basis: 31%;
+    border-radius: 8px;
     text-align: center;
-    font-size: 18px;
-    padding-top: 20px;
 }
-.image-card p{
+.grid-col img{
+    width: 330px;
+    height: 250px;
+    border-radius: 10px;
+}
+.grid-col p{
+    padding:0 50px;
+    width: 100%;
+    text-align: center;
+}
+.grid-col h3{
+    margin-top: 16px;
+    margin-bottom: 15px;
     text-align: center;
 }
 
-.image-box img{
-    width: 340px;
-    height: 200px;
-    margin-left: -25px;
-    margin-top: -30px;
-   border-top-right-radius: 6px;
-   border-top-left-radius: 6px;
-   object-fit: cover;
+
+
+@media screen and (max-width: 768px){
+    .row{
+        flex-direction: column;
+        text-align: center;    
+    }
+    .grid-col h3{
+        font-size: 16px;
+    }
+    .grid-col p{
+        padding-bottom: 30px;
+    }
 }
-.image-box-2 img{
-    width: 340px;
-    height: 200px;
-    margin-top: -30px;
-    margin-left: -25px;
-   border-top-right-radius: 6px;
-   border-top-left-radius: 6px;
-   object-fit: cover;
-}
-.image-box-3 img{
-    width: 340px;
-    height: 200px;
-    margin-top: -30px;
-    margin-left: -25px;
-   border-top-right-radius: 6px;
-   border-top-left-radius: 6px;
-   object-fit: cover;
 
 
-}@media screen and (max-width: 768px){
-    .service-home{
-        height: 180vh;
-        left: 10px;
-        width: 95%;
-        margin-top: -20px;
-        border-radius: 0;
-    }
-    .image-row{
-        display: block;
-        margin-left:40px;
-        justify-content: space-between;
-        padding-top: 50px;        
-    }
-
-    .image-card{
-        padding: 30px 25px;
-        margin-bottom: 40px;
-        margin-top:0px;
-        width: 300px;
-        margin-left: -11.5px;
-        border-radius: 6px;
-        background: white;
-        box-shadow: 0 0 5px 0px #72a188;
-        user-select: none;
-        cursor: pointer;
-        transition: all 0.5s ease;   
-    }
-    .image-card h1{
-        text-align: center;
-        font-size: 18px;
-        padding-top: 20px;
-    }
-    .image-card p{
-        text-align: center;
-    }
-    .image-box img{
-        width: 300px;
-        height: 150px;
-        margin-left: -25px;
-        margin-top: -30px;
-       border-top-right-radius: 6px;
-       border-top-left-radius: 6px;
-       object-fit: cover;
-    }
-    .image-box-2 img{
-        width: 300px;
-        height: 150px;
-        margin-top: -30px;
-        margin-left: -25px;
-       border-top-right-radius: 6px;
-       border-top-left-radius: 6px;
-       object-fit: cover;
-    }
-    .image-box-3 img{
-        width: 300px;
-        height: 150px;
-        margin-top: -30px;
-        margin-left: -25px;
-       border-top-right-radius: 6px;
-       border-top-left-radius: 6px;
-       object-fit: cover;
-    }
-
-
-}
 
 
 .footer-container{
@@ -895,46 +795,40 @@ hr{
     height: 50vh;
     top: 0;
     background-size: cover;
-    background-image: url(images/Farm.jpg);
-    background-position: center center;
-    opacity: .9;
+    background-image:  linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/new\ farm.jpg);
+    background-position: center center;   
+}
+.about-home h1{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #FFF;
+    font-size: 48px;
 }
 
-.about-home::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width:100% ;
-    height: 100%;
-    background: #0f4040;
-    opacity: .7;
-    z-index: -1;
-}
+
 .products-home{
     position: relative;
     width: 100%;
     height: 50vh;
     top: 0;
     background-size: cover;
-    background-image: url(images/Farm.jpg);
-    background-position: center center;
-    opacity: .9;
+    background-image:  linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/new\ farm.jpg);
+    background-position: center center; 
+}
+.products-home h1{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #FFF;
+    font-size: 48px;
 }
 
-.products-home::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width:100% ;
-    height: 100%;
-    background: #0f4040;
-    opacity: .7;
-    z-index: -1;
-}
+
 
 .contact-home{
     position: relative;
@@ -942,23 +836,19 @@ hr{
     height: 50vh;
     top: 0;
     background-size: cover;
-    background-image: url(images/Farm.jpg);
-    background-position: center center;
-    opacity: .9;
+    background-image:  linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/new\ farm.jpg);
+    background-position: center center; 
+}
+.contact-home h1{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #FFF;
+    font-size: 48px;
 }
 
-.contact-home::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width:100% ;
-    height: 100%;
-    background: #0f4040;
-    opacity: .7;
-    z-index: -1;
-}
 
 .comment-box{
     width: 50%;
@@ -1087,6 +977,36 @@ hr{
     color: white;
     transition: 1s;
 }
+
+@media(max-width: 768px){
+    .table thead{
+        display: none;
+    }
+    .table, .table tbody,.table tr .table td{
+       display: block;
+       width: 100%;  
+    }
+    .table tr{
+        margin-bottom: 15px;
+    }
+    .table tbody tr td{
+        text-align: right;
+        padding-left: 50%;
+        position: relative;
+    }
+    .table td::before{
+        content: attr(data-label);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        padding-left: 15px;
+        font-weight: 600;
+        font-size: 14px;
+        text-align: left;
+    }
+}
+
+
 
 
 
