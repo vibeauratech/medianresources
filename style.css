@@ -120,6 +120,39 @@ nav .links li a:hover{
     color: #00bfff;
     font-weight: 700;
 }
+.nav-dropdown{
+    position: relative;
+}
+.nav-dropdown a::after{
+    content: '';
+    display: inline-block;
+    margin-left: .5em;
+    vertical-align: middle;
+    border-top: .3em solid white;
+    border-right: .3em solid transparent;
+    border-left: .3em solid transparent;
+}
+
+.dropdown-menu{
+   /* display: none;*/
+   position: absolute;
+   left: 0;
+   right: 10;
+   top: 100%;
+   padding: .5em 0;
+   border: 1px solid #00001a;
+   border-radius: .5em;
+   background-color: #00001a;
+}
+
+.dropdown-item{
+    display: block;
+    padding: 0 1.5em;
+    font-size: .875em;
+    color: #ccc;
+    line-height: 2;
+    text-decoration: none;
+}
 
 #sign-up{
     display: inline-block;
