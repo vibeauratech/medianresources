@@ -614,7 +614,7 @@ button:hover{
 
 
 .footer-container{
-    max-width: 1170px;
+    max-width: 1320px;
     background-color:#00001a;
     margin: auto;
     
@@ -740,7 +740,7 @@ button:hover{
 }
 
 hr{
-    width: 75%;
+    width: 85%;
     border: 0;
     border-bottom: 2px solid #FFF;
     margin: 20px auto;
