@@ -320,12 +320,12 @@ button:hover{
 .max-width h3{
     text-align: center;
     position: relative;
-    font-size: 22px;
+    font-size: 20px;
 }
 .max-width h2{
     text-align: center;
     position: relative;
-    font-size: 44px;
+    font-size: 32px;
     margin-bottom: 2px;
     padding-bottom: 20px;
 }
@@ -393,8 +393,10 @@ button:hover{
         flex-direction: column;
         text-align: center;    
     }
+
     .about-col h1{
         padding-top: 0;
+        font-size: 24px;
     }
     .about-col p{
         font-size: 14px;
@@ -488,6 +490,7 @@ button:hover{
     .service-width{        
         padding: 0 25px;        
     }
+    
     .card{
         width: calc(50% - 10px);
         margin-bottom: 20px;
@@ -505,8 +508,10 @@ button:hover{
 @media screen and (max-width: 700px){
     
     .card{
-        width: 100%;
-        
+        width: 100%;   
+    }
+    .service-width h2{
+        font-size: 24px;
     }
     .box h3{
         font-size: 20px;
