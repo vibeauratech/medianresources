@@ -297,6 +297,9 @@ button:hover{
         text-decoration: none;
         font-size: 14px;   
     }
+    nav .links li:hover .sub-menu{
+        display: none;
+    }
 
     nav .portfolioicon-burger{
         display: block;
