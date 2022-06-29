@@ -111,7 +111,7 @@ nav .links li::after{
 nav .links li:hover::after{
     width: 100%;
 }
-nav .links li a{
+nav .links li > a{
     color: white;
     text-decoration: none;
     font-size: 14px;   
@@ -120,39 +120,25 @@ nav .links li a:hover{
     color: #00bfff;
     font-weight: 700;
 }
-.nav-dropdown{
-    position: relative;
+.sub-menu{
+    display: none;
 }
-.nav-dropdown a::after{
-    content: '';
-    display: inline-block;
-    margin-left: .5em;
-    vertical-align: middle;
-    border-top: .3em solid white;
-    border-right: .3em solid transparent;
-    border-left: .3em solid transparent;
+nav .links li .sub-menu a{
+    font-size: 13px;
 }
 
-.dropdown-menu{
-   /* display: none;*/
-   position: absolute;
-   left: 0;
-   right: 10;
-   top: 100%;
-   padding: .5em 0;
-   border: 1px solid #00001a;
-   border-radius: .5em;
-   background-color: #00001a;
-}
-
-.dropdown-item{
+nav .links li:hover .sub-menu{
     display: block;
+    position: absolute;
+    background: #00001a;
+    margin-top: 0px;
+    margin-left: -15px;
+    line-height: 3;
     padding: 0 1.5em;
-    font-size: .875em;
-    color: #ccc;
-    line-height: 2;
-    text-decoration: none;
+    
 }
+
+
 
 #sign-up{
     display: inline-block;
