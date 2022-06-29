@@ -395,8 +395,8 @@ button:hover{
 .new-btn{
     display: inline-block;
     text-decoration: none;
-    color: #86b300;
-    border: 2px solid #86b300;
+    color: #00001a;
+    border: 2px solid #00001a;
     padding: 16px 64px;
     font-size: 14px;
     font-weight: bold;       
@@ -407,8 +407,8 @@ button:hover{
 }
 .new-btn:hover{
     color: white;
-    background: #86b300;
-    border: 1px solid #86b300;
+    background: #00001a;
+    border: 1px solid #00001a;
 }
 @media(max-width: 768px){
     .about-row{
@@ -1015,13 +1015,13 @@ hr{
     border: 1px solid white;
     padding: 12px 34px;
     font-size: 14px;       
-    background: #86b300;
+    background: #00001a;
     position: relative;
     cursor: pointer;
 }
 .comment-box .comment-form .read-btn:hover{
-    border: 1px solid 	#ffc61a;  
-    background: #ffc61a;
+    border: 1px solid #090946;  
+    background: #090946;
     color: white;
     transition: 1s; 
 
