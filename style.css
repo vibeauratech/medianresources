@@ -693,7 +693,7 @@ button:hover{
 
 @media(max-width:768px){
     :root{
-        --img-marquee-height:40vh; 
+        --img-marquee-height:50vh; 
         --img-marquee-width:100%; 
         --img-marquee-elements-displayed:2;
     }
