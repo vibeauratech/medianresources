@@ -702,55 +702,7 @@ button:hover{
     object-fit: cover;
     overflow: hidden;
 }
-:root{
-    --img-marquee-width:100%;
-    --img-marquee-height:80vh;
-    /*--marquee-elements:9;*/
-    --img-marquee-elements-displayed:3;
-    --img-marquee-element-width:calc(var(--img-marquee-width)/var(--img-marquee-elements-displayed));
-    --img-marquee-animation-duration:calc(var(--img-marquee-elements)*5s);
-   
-}
 
-
-.marquee-img{
-    list-style: none;
-    height: 100%;
-    display: flex;
-    object-fit: cover;
-    animation: scrolling var(--marquee-animation-duration) linear infinite ;
-}
-
-@keyframes scrolling{
-    0%{transform: translateX(80vw);}
-    100%{transform: translateX(calc(-1*var(--img-marquee-element-width)*var(--img-marquee-elements)));}
-}
-
-
-.marquee-img li{
-    
-    width: var(--marquee-element-width);
-    flex-shrink: 0;
-    font-size: calc(var(--marquee-height)*1/3);
-    white-space: nowrap;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-}
-.marquee-img li img{
-    width: 100%;
-    border-right: 2px solid #00001a;
-
-}
-
-@media(max-width:768px){
-    :root{
-        --img-marquee-height:50vh; 
-        --img-marquee-width:100%; 
-        --img-marquee-elements-displayed:2;
-    }
-}
 
 .more{
     display: flex;
