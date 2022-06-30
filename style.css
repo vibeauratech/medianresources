@@ -708,7 +708,7 @@ button:hover{
     /*--marquee-elements:9;*/
     --img-marquee-elements-displayed:3;
     --img-marquee-element-width:calc(var(--img-marquee-width)/var(--img-marquee-elements-displayed));
-    --img-marquee-animation-duration:calc(var(--img-marquee-elements)*3s);
+    --img-marquee-animation-duration:calc(var(--img-marquee-elements)*5s);
    
 }
 
