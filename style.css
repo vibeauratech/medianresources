@@ -435,7 +435,7 @@ button:hover{
 }
 @media screen and (max-width: 1024px){
     .service-container{
-        height: 195vh;
+        height: 140vh;
     }
 }
 
