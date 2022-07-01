@@ -433,9 +433,9 @@ button:hover{
         color: #FFF;
     }
 }
-@media screen and (max-width: 1024px){
+@media  only screen (min-width: 1024px){
     .service-container{
-        height: 140vh;
+        height: 195vh;
     }
 }
 
