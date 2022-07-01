@@ -433,11 +433,7 @@ button:hover{
         color: #FFF;
     }
 }
-@media  only screen (min-width: 1024px){
-    .service-container{
-        height: 195vh;
-    }
-}
+
 
 
 
