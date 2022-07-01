@@ -13,62 +13,57 @@
     allowfullscreen></iframe>   
 </head> 
 
-<body>
+<body onload="slider()">
 
-<header>
-    <nav>
-        <input id="portfolionav-toggle" type="checkbox">
-        <a href="#" class="logo">
-            <ul class="details-list">
-                <li><img src="images/median.svg">MEDIAN RESOURCES LLC.</li>
-               </ul>
-        </a>    
-        <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="About.html">About Us</a></li>
-            <li><a href="Products.html">Products</a>
-                <div class="sub-menu">
-                    <ul>
-                        <li><a href="Products.html">Petrochemicals</a></li>
-                        <li><a href="Products.html">Pharmaceuticals</a></li>
-                        <li><a href="Products.html">Feed Additives</a></li>
-                        <li><a href="Products.html">Farm Produce</a></li>
-                    </ul>
-                </div>             
-            </li>
-            <li><a href="contact us.html">Contact</a></li>                         
-        </ul>
-        
-        <label for="portfolionav-toggle" class="portfolioicon-burger">
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-        </label>
-    </nav>
-    <div class="hero-texts">
-        <h1> Trusted Supplier of Quality Chemicals <br> And Raw Materials</h1>
-        <p>
-            Distribution and marketing of various chemicals with specialty in
-            Petrochemicals, <br>Allied and Auxilliary chemicals,Pharmaceuticals,Food And <br>
-            Feed Additives.
-        </p>
-        <div>
-            <button type="button"><span></span> Learn More</button>
-            <button type="button"><span></span> Contact Us</button>
-        </div>
-    </div>          
-         
-</header>
+<div class="banner">
+    <div class="slider">
+        <img src="images/Lekki-deep-seaport.jpg" id="slideImg">
+    </div>
+    <div class="overlay">
+        <nav>
+            <input id="portfolionav-toggle" type="checkbox">
+            <a href="#" class="logo">
+                <ul class="details-list">
+                    <li><img src="images/median.svg">MEDIAN RESOURCES LLC.</li>
+                   </ul>
+            </a>    
+            <ul class="links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About Us</a></li>
+                <li><a href="Products.html">Products</a>
+                    <div class="sub-menu">
+                        <ul>
+                            <li><a href="Products.html">Petrochemicals</a></li>
+                            <li><a href="Products.html">Pharmaceuticals</a></li>
+                            <li><a href="Products.html">Feed Additives</a></li>
+                            <li><a href="Products.html">Farm Produce</a></li>
+                        </ul>
+                    </div>             
+                </li>
+                <li><a href="contact us.html">Contact</a></li>                         
+            </ul>
+            
+            <label for="portfolionav-toggle" class="portfolioicon-burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </label>
+        </nav>
+        <div class="hero-texts">
+            <h1> Trusted Supplier of Quality Chemicals <br> And Raw Materials</h1>
+            <p>
+                Distribution and marketing of various chemicals with specialty in
+                Petrochemicals, <br>Allied and Auxilliary chemicals,Pharmaceuticals,Food And <br>
+                Feed Additives.
+            </p>
+            <div>
+                <button type="button"><span></span> Learn More</button>
+                <button type="button"><span></span> Contact Us</button>
+            </div>
+        </div>                
+    </div>
+</div>
 
-<div class="marquee">
-    <ul class="marquee-content">
-        <li>Nicotinamide B3 </li>
-        <li>Folic Acid</li>
-        <li>Corn Starch</li>
-        <li>Ammonium Chloride</li>       
-        <li>Sodium Hypochlorite</li>       
-    </ul>
-</div>  
 
 
 <div class="about-us">
@@ -205,10 +200,34 @@
     <i class="fa-brands fa-twitter"></i>
     <i class="fa-brands fa-instagram"></i>       
 </div>
- <p class="copyright"> auradecor&copy; 2022 - All right reserved</p>
-
-    
+ <p class="copyright"> auradecor&copy; 2022 - All right reserved</p>   
 </footer>
+
+<script>
+    var slideImg = document.getElementById("slideImg");
+
+    var images = new Array(
+        "images/Lekki-deep-seaport.jpg",
+        "images/feeds.png",
+        "images/typesofbarrels.jpg",
+        "images/Metal-drums-stand-on-wooden-pallets.jpg"
+     );
+    
+
+    var len = images.length;
+    var i = 0
+
+    function slider(){
+        if (i > len-1) {
+            i = 0
+        }
+        slideImg.src = images[i];
+        i++;
+        setTimeout('slider()',3000);
+    }           
+    
+
+</script>
 
 </body>  
 </html>
