@@ -11,13 +11,14 @@
 header{
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(Batter.jpg);
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/feeds.png);
     background-size: cover;
     background-position: center;
 }
+
 nav{
     z-index: 10;
-    background: rgba(0,0,0,0.75);
+    background: #00001a;
     left: 0;
     right: 0;
     height: 80px;
@@ -28,17 +29,40 @@ nav{
 }
 .logo{
     float: left;
-    display: flex;
-    color:white;    
+    display: flex;    
     font-size: 24px; 
     font-weight: 700;
-    margin-left: 0;
+    margin-right: 1px 0;
+    margin-top: -35px;
     cursor: pointer;
 }
-
-.logo strong{
-    color: rgb(28, 175, 106);
+.details-list{
+    list-style: none;
+    margin: 30px 0;
+    justify-content: space-between;
 }
+
+.details-list li{
+    margin-left: 45px;
+    font-size: 28px;
+    font-weight: 700;
+    line-height:1.7;
+    color: #86b300;
+    padding-left: 50px;
+    position: relative;
+    
+
+}
+.details-list li img{
+    position: absolute;
+    top: -20px;
+    left: -60px;
+    width: 80px;
+    height: 80px;
+    padding: 0 5px;
+       
+}
+
 
 nav .links{
     float: right;
@@ -59,7 +83,7 @@ nav .links li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background: rgb(28, 175, 106);
+    background: #00bfff;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -67,38 +91,32 @@ nav .links li::after{
 nav .links li:hover::after{
     width: 100%;
 }
-nav .links li a{
+nav .links li > a{
     color: white;
     text-decoration: none;
     font-size: 14px;   
 }
 nav .links li a:hover{
-    color: rgb(28, 175, 106);
+    color: #00bfff;
     font-weight: 700;
 }
-
-#sign-up{
-    display: inline-block;
-    text-decoration: none;
-    color: rgb(28, 175, 106);
-    border: 2px solid rgb(28, 175, 106);
-    padding: 12px 34px;
-    font-size: 14px;
-    font-weight: 700;       
-    background: transparent;
-    position: relative;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-right: -87px; 
-
+.sub-menu{
+    display: none;
 }
-#sign-up:hover{
-    color:#FFF;
-    background-color:rgb(28, 175, 106); 
-    border-radius: 3px;
-    border: 1px solid rgb(28, 175, 106);
+nav .links li .sub-menu a{
+    font-size: 13px;
 }
 
+nav .links li:hover .sub-menu{
+    display: block;
+    position: absolute;
+    background: #00001a;
+    margin-top: 0px;
+    margin-left: -15px;
+    line-height: 3;
+    padding: 0 1.5em;
+    
+}
 
 
 #portfolionav-toggle{
@@ -118,7 +136,7 @@ nav .portfolioicon-burger{
 nav .portfolioicon-burger .line{
     width: 25px;
     height: 2px;
-    background-color:rgb(28, 175, 106) ;
+    background-color:#00bfff;
     margin: 5px;
     border-radius: 3px;
     transition: all .3s ease-in-out;
@@ -133,7 +151,7 @@ nav .portfolioicon-burger .line{
 }
 
 .hero-texts h1{
-    font-size: 64px;
+    font-size: 54px;
     margin-top: 40px;
 }
 .hero-texts p{
@@ -149,7 +167,7 @@ button{
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid rgb(28, 175, 106);
+    border: 2px solid white;
     background: transparent;
     color: white;
     cursor: pointer;
@@ -158,7 +176,7 @@ button{
 }
 
 span{
-    background:rgb(28, 175, 106) ;
+    background:#86b300;
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -179,15 +197,36 @@ button:hover{
     header{
         height: 100vh;
     }
+    .details-list li{
+        margin-left: 40px;
+        font-size: 16px;
+        font-weight: 700;
+        line-height:2.2;
+        color: #00bfff;
+        padding-left: 30px;
+        position: relative;
+        
+    
+    }
+    .details-list li img{
+        position: absolute;
+        top: -15px;
+        left: -40px;
+        width: 70px;
+        height: 70px;
+        padding: 0 5px;
+           
+    }
     .hero-texts h1{
-        font-size: 40px;
+        font-size: 32px;
         margin-top: 100px;
     }
     .hero-texts p{
         font-size: 16px;
+        width: 90%;
         font-weight: 200;
         margin: 20px auto;
-        line-height: 20px;
+        line-height: 1.4;
     }
     button{
         width: 120px;
@@ -196,7 +235,7 @@ button:hover{
         margin: 14px 7px;
         border-radius: 25px;
         font-weight: bold;
-        border: 2px solid rgb(28, 175, 106);
+        border: 2px solid #86b300;
         background: transparent;
         color: white;
         cursor: pointer;
@@ -214,7 +253,7 @@ button:hover{
         top: 80px;
         bottom: 100%;
         z-index: 9;
-        background:rgb(28, 175, 106);
+        background:#00001a;
         display: flex;
         width: auto;
         height: auto;
@@ -232,6 +271,9 @@ button:hover{
         color:white;
         text-decoration: none;
         font-size: 14px;   
+    }
+    nav .links li:hover .sub-menu{
+        display: none;
     }
 
     nav .portfolioicon-burger{
@@ -257,8 +299,65 @@ button:hover{
     nav :checked ~ .portfolioicon-burger .line:nth-child(2){
         opacity: 0;
 
-    }  
+    }   
 }
+
+.marquee{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: var(--marquee-height);
+    width: var(--marquee-width);
+    background-color: #00bfff;
+    color: white;
+    margin:20px 0;
+    overflow: hidden;
+}
+:root{
+    --marquee-width:100%;
+    --marquee-height:10vh;
+    /*--marquee-elements:9;*/
+    --marquee-elements-displayed:3;
+    --marquee-element-width:calc(var(--marquee-width)/var(--marquee-elements-displayed));
+    --marquee-animation-duration:calc(var(--marquee-elements)*5s);
+   
+}
+
+
+.marquee-content{
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling var(--marquee-animation-duration) linear infinite ;
+}
+
+
+
+@keyframes scrolling{
+    0%{transform: translateX(80vw);}
+    100%{transform: translateX(calc(-1*var(--marquee-element-width)*var(--marquee-elements)));}
+}
+
+
+.marquee-content li{
+    
+    width: var(--marquee-element-width);
+    flex-shrink: 0;
+    font-size: calc(var(--marquee-height)*1/3);
+    white-space: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+@media(max-width:768px){
+    :root{
+        --marquee-height:10vh; 
+        --marquee-width:100%; 
+        --marquee-elements-displayed:2;
+    }
+}
+
 
 .about-us{
     width: 80%;
@@ -278,6 +377,7 @@ button:hover{
 }
 .about-col img{
     width: 100%;
+    height: 440px;
     object-fit: cover;
 }
 .about-col h1{
@@ -318,6 +418,9 @@ button:hover{
     .about-col p{
         font-size: 14px;
         line-height: 1.6;
+    }
+    .about-col img{
+        height: 280px;
     }
 }
 @media(max-width: 1024px){
@@ -623,6 +726,193 @@ hr{
         padding-bottom: 50px;
     }
     
+}
+
+.row{
+    width: 80%;
+    margin: auto;
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;      
+}
+@media screen and (max-width: 768px){
+    .row{
+        flex-direction: column;
+        text-align: center;    
+    }
+}
+
+.about-home{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    background-size: cover;
+    background-image:  linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/new\ farm.jpg);
+    background-position: center center;   
+}
+.about-home h1{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #FFF;
+    font-size: 48px;
+}
+.blog-content{
+    width: 100%;
+    margin: auto;
+    padding: 50px 0;
+}
+.blog-left{
+    flex-basis: 65%;
+}
+.blog-left img{
+    width: 100%;
+}
+.blog-left h2{
+    color: #222;
+    font-weight: 600;
+    margin: 30px 0;
+}
+.blog-left  p{
+    color: rgb(46, 46, 46);
+    padding: 0;
+    width: 95%;
+}
+.blog-right{
+    flex-basis: 32%;
+}
+.blog-right h3{
+    background: #00001a;
+    color: white;
+    padding: 9px 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.blogright-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    box-sizing: border-box;
+}
+@media(max-width: 768px){
+    .blog-right{
+        margin-top: 30px;
+    }
+}
+
+
+.products-home{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    background-size: cover;
+    background-image:  linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/new\ farm.jpg);
+    background-position: center center; 
+}
+.products-home h1{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #FFF;
+    font-size: 48px;
+}
+
+
+
+.contact-home{
+    position: relative;
+    width: 100%;
+    height: 50vh;
+    top: 0;
+    background-size: cover;
+    background-image:  linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/new\ farm.jpg);
+    background-position: center center; 
+}
+.contact-home h1{
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #FFF;
+    font-size: 48px;
+}
+
+
+.comment-box{
+    width: 50%;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px 0px #72a188;
+    margin: 50px 120px;
+    padding: 10px 20px;
+    padding-top: 50px;
+}
+.comment-box h3{
+    text-align: left;
+}
+.comment-form input, .comment-form textarea{
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    background: #f0f0f0;
+
+
+}
+
+.comment-box .comment-form .read-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px solid white;
+    padding: 12px 34px;
+    font-size: 14px;       
+    background: #00001a;
+    position: relative;
+    cursor: pointer;
+}
+.comment-box .comment-form .read-btn:hover{
+    border: 1px solid #090946;  
+    background: #090946;
+    color: white;
+    transition: 1s; 
+
+}
+
+@media(max-width:768px){
+    .comment-box{
+        width: 80%;
+        border: 1px solid #ccc;
+        margin: 50px 30px;
+        padding: 10px 20px;
+        padding-top: 50px;
+    }
+
+}
+
+.map-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.map-container h1{
+    margin-bottom: 60px;
+}
+.map-container iframe{
+    width: 80%;
+    height: 500px;
 }
 
 
