@@ -32,7 +32,6 @@
     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7));
 }
 
-
 nav{
     z-index: 10;
     background: #00001a;
@@ -158,6 +157,7 @@ nav .portfolioicon-burger .line{
     border-radius: 3px;
     transition: all .3s ease-in-out;
 }
+
 .hero-texts{
     width: 100%;
     position: absolute;
@@ -212,9 +212,10 @@ button:hover{
 
 
 @media screen and (max-width:768px) {
+
     .details-list li{
-        margin-left: 40px;
-        font-size: 16px;
+        margin-left: 45px;
+        font-size: 20px;
         font-weight: 700;
         line-height:2.2;
         color: #00bfff;
@@ -225,13 +226,14 @@ button:hover{
     }
     .details-list li img{
         position: absolute;
-        top: -15px;
-        left: -40px;
-        width: 70px;
-        height: 70px;
+        top: -20px;
+        left: -60px;
+        width: 80px;
+        height: 80px;
         padding: 0 5px;
            
     }
+    
 
     nav .links{
         float: none;
@@ -290,26 +292,8 @@ button:hover{
         opacity: 0;
 
     }   
-    .details-list li{
-        margin-left: 40px;
-        font-size: 16px;
-        font-weight: 700;
-        line-height:2.2;
-        color: #00bfff;
-        padding-left: 30px;
-        position: relative;
-        
-    
-    }
-    .details-list li img{
-        position: absolute;
-        top: -15px;
-        left: -40px;
-        width: 70px;
-        height: 70px;
-        padding: 0 5px;
-           
-    }
+   
+   
     .hero-texts h1{
         font-size: 32px;
         margin-top: 100px;
