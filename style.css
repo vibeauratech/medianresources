@@ -321,14 +321,47 @@ button:hover{
     }
 }
 
+.welcome{
+    margin-top: 80px;
+}
+.welcome p{
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+}
+.welcome h2{
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+    font-size: 48px;
+    font-weight: 700;
+}
+.welcome h2::after{
+    content: '';
+    background:#ffc61a ;
+    width: 200px;
+    height: 5px;
+    bottom: -18px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+}
+@media screen and (max-width:768px){
+    .welcome h2{
+        font-size: 26px;
+    }
+    .welcome p{
+        font-size: 18px;
+    }
+}
 
 .about-us{
     width: 80%;
     margin: auto;
-    padding-top: 40px;
+    padding-top: 0px;
     padding-bottom: 5px;
-
 }
+
 .about-row{
     margin-top: 5%;
     display: flex;
@@ -400,9 +433,30 @@ button:hover{
     width: 90%;
     padding: 1rem 1.5rem;
     margin: auto;
+    margin-top: 60px;
+}
+
+.icon-container{
+    width: 90%;
+    padding: 1rem 1.5rem;
+    margin: auto;
 }
 .card-container h2{
     text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+    font-size: 28px;
+    font-weight: 700;
+}
+.card-container h2::after{
+    content: '';
+    background:#ffc61a ;
+    width: 100px;
+    height: 5px;
+    bottom: -18px;
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
 }
 .center{
     display: flex;
@@ -440,8 +494,9 @@ button:hover{
 
 @media screen and (max-width:768px){
     .team{
-        display: block;
-        justify-content: space-around;
+        display: flex;
+        flex-direction: column;
+       margin: 30px 0;
     }  
 }
 
@@ -449,6 +504,7 @@ button:hover{
     width: 90%;
     padding: 1rem 1.5rem;
     margin: auto;
+    margin-top: 60px;
 }
 .icon-container h2{
     text-align: center;
@@ -459,7 +515,7 @@ button:hover{
 }
 .icon-container h2::after{
     content: '';
-    background:#7A8AFF ;
+    background:#ffc61a;
     width: 100px;
     height: 5px;
     bottom: -18px;
@@ -511,16 +567,18 @@ button:hover{
 }
 @media screen and (max-width:768px){
     .icon-team{
-        display: block;
+        display: flex;
+        flex-direction: column;
        margin: 30px 0;
     } 
+   
    
 }
 
 footer{
     width: 100%;
     bottom: 0;
-    background: rgb(70, 69, 69);
+    background:  #86b300;
     padding: 100px 0 30px;
     font-size: 13px ;
     line-height: 20px;
