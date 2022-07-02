@@ -64,6 +64,17 @@
     </div>
 </div>
 
+<div class="marquee">
+    <ul class="marquee-content">
+        <li>Nicotinamide B3</li>
+        <li>Folic Acid</li>
+        <li>Sodium Hypochlorite</li>
+        <li>Xylene</li>
+        <li>Nicotinamide B3</li>
+        <li>Nicotinamide B3</li>
+    </ul>
+</div>
+
 <div class="welcome">
     <p>Welcome To</p>
     <h2>MEDIAN RESOURCES</h2>
@@ -84,7 +95,7 @@
                         cola, shea butter, cashew nuts and more as annex operations. 
                         We also act as representative to manufacturers.             
                    </p> 
-                   <a href="" class="new-btn">LEARN MORE</a>    
+                   <a href="About.html" class="new-btn">LEARN MORE</a>    
         </div>
         <div class="about-col">
             <img src="images/maria-lupan-hy97yy3e03A-unsplash.jpg" >
@@ -156,7 +167,7 @@
             <div class="card">
                 <img src="images/Galacto-Oligosaccharide-Gos-Food-Additives-with-Best-Price.jpg">
                 <div class="card-details">
-                    <h3>Food And Feed Additives</h3>
+                    <h3>Food And Feed Additives,Veterinary Supplies.</h3>
                     <p>Vitamin supplements.</p>
                 </div>
             </div>
@@ -164,6 +175,37 @@
         </div>
     </div>
 </div>
+
+<div class="welcome">
+    <h3 style="font-family:Georgia, 'Times New Roman', Times, serif"
+        style="font-style: italic;">Our Certifications,partners & subsidiary.
+    </h3>
+
+    <div class="clients">
+        <div class="client-img">
+            <img src="images/nafdac.png">
+        </div>
+        <div class="client-img1">
+            <img src="images/haicheng.gif">
+        </div>
+        <div class="client-img">
+            <img src="images/fredwise-agro-nigeria-limited.official-logo.jpg">
+        </div>
+        <div class="client-img">
+            <img src="images/logo.jpg">
+        </div>
+        <div class="client-img">
+            <img src="images/Picture2.png">
+        </div>
+        
+        
+    </div>
+</div>
+
+
+
+
+
 
 
 <footer id="contact">
@@ -231,7 +273,16 @@
         slideImg.src = images[i];
         i++;
         setTimeout('slider()',3000);
-    }           
+    }  
+    const root = document.documentElement;
+    const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
+    const marqueeContent = document.querySelector(".marquee-content");
+
+    root.style.setProperty("--marquee-elements", marqueeContent.children.length);
+    for (let i=0; i<marqueeElementsDisplayed; i++) {
+    marqueeContent.appendChild(marqueeContent.children[i].cloneNode(true));
+}
+         
 </script>
 
 </body>  
