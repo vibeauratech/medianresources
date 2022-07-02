@@ -656,10 +656,18 @@ button:hover{
 .client-img img{
     padding-right: 30px;
 }
+.client-logo{
+    padding-right: 40px;
+}
 @media screen and (max-width:768px){
     .clients{
         display: flex;
         flex-direction: column;
+    }
+    .client-logo{
+        padding-bottom: 26px;
+        padding-top: 26px;
+        padding-right: none;
     }
 }
 
