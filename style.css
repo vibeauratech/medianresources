@@ -210,11 +210,10 @@ button:hover{
     border: none;
 }
 
-
 @media screen and (max-width:768px) {
 
     .details-list li{
-        margin-left: 45px;
+        margin-left: 15px;
         font-size: 20px;
         font-weight: 700;
         line-height:2.2;
@@ -227,14 +226,12 @@ button:hover{
     .details-list li img{
         position: absolute;
         top: -20px;
-        left: -60px;
+        left: -35px;
         width: 80px;
         height: 80px;
         padding: 0 5px;
            
     }
-    
-
     nav .links{
         float: none;
         position: fixed;
@@ -624,7 +621,7 @@ button:hover{
     background: #ddf1fa;
     color: black;
     transform: scale(1.05);
-
+   
 }
 .icon-card:hover i{
     color: black;
@@ -786,6 +783,7 @@ hr{
 }
 .copyright{
     text-align: center;
+    font-size: 18px;
     color: white;
     padding-bottom: 10px;
 }
@@ -838,9 +836,10 @@ hr{
     }
     .copyright{
         text-align: center;
+        font-size: 14px;
         margin-left: 0;
         color: white;
-        padding-bottom: 50px;
+        padding-bottom: 10px;
     }
     
 }
@@ -883,10 +882,11 @@ hr{
     padding: 50px 0;
 }
 .blog-left{
-    flex-basis: 65%;
+    flex-basis: 55%;
 }
 .blog-left img{
-    width: 100%;
+    width: 80%;
+    height: 310px;
 }
 .blog-left h2{
     color: #222;
@@ -899,7 +899,7 @@ hr{
     width: 95%;
 }
 .blog-right{
-    flex-basis: 32%;
+    flex-basis: 45%;
 }
 .blog-right h3{
     background: #00001a;
@@ -916,10 +916,45 @@ hr{
     padding: 8px;
     box-sizing: border-box;
 }
+.top-box{
+    width: 140px;
+    height: 140px;
+    background: #00001a;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    box-shadow: 0 0 5px 0px #ddf1fa;
+    border-radius: 4px;
+}
+.top-row{
+    display: flex;
+    justify-content:start;
+}
+.top-box h3{
+    font-size: 32px;
+    text-align: center;
+    color: #FFF;
+}
+.top-box p{
+    text-align: center;
+    color: #ccc;
+    padding-left: 6px;
+    font-size: 12px;
+}
+
+
 @media(max-width: 768px){
     .blog-right{
         margin-top: 30px;
     }
+    .top-row{
+        display: flex;
+        justify-content:space-evenly;
+    }
+    
+
 }
 
 
