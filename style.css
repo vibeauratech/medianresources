@@ -1046,7 +1046,12 @@ hr{
     .left-list,.right-list,.products-info,.products-image{
         flex-basis: 100%;
     }
+}
 
+@media(max-width: 768px){
+    .products-price{
+        text-align: center;
+    }
 }
 
 
