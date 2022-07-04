@@ -548,9 +548,13 @@ button:hover{
     
 }
 .card-details{
-    margin-top: 0.5rem;
+    margin-top: 0.1rem;
     color: black;
-    padding: 20px 10px;
+    padding: 15px 10px;
+}
+.card a{
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 @media screen and (max-width:768px){
@@ -975,6 +979,74 @@ hr{
     text-align: center;
     color: #FFF;
     font-size: 48px;
+}
+.products-list{
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.left-list{
+    flex-basis: 70%;
+}
+.right-list{
+    flex-basis: 25%;
+}
+.left-list h1{
+    color: black;
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+.products-tab{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 30px 0;
+    border-top: 2px solid #ccc;
+}
+.products-image{
+    flex-basis: 40%;
+    object-fit: cover;
+}
+.products-image img{
+    width: 100%;
+    border-radius: 12px;
+}
+.products-info{
+    flex-basis:58% ;
+}
+.products-info h3{
+    font-weight: 600;
+    font-size: 22px;
+    margin: 4px 0;
+}
+.products-info i{
+    color: #86b300;
+    font-size: 18px;
+    margin: 10px 1px;
+}
+.products-price{
+    text-align: left;
+    margin-top: 40px;
+}
+.products-price a{
+    color: #00001a;
+    background: transparent;
+    border: 2px solid #00001a;
+    padding: 16px 32px;
+    font-weight: 600;
+}
+.products-price a:hover{
+    background: #00001a;
+    color: #FFF;
+}
+
+@media only screen and (max-width:700px){
+    .left-list,.right-list,.products-info,.products-image{
+        flex-basis: 100%;
+    }
+
 }
 
 
