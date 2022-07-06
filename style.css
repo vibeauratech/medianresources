@@ -490,6 +490,16 @@ button:hover{
     }
 }
 
+.arrow {
+    text-align: center;
+}
+.arrow-head h2{
+    font-size: 28px;
+
+}
+.arrow-head p{
+    font-size: 24px;
+}
 .card-container{
     width: 90%;
     padding: 1rem 1.5rem;
