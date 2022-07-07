@@ -34,7 +34,7 @@
 
 nav{
     z-index: 10;
-    background: #00001a;
+    background: #ffc61a;
     left: 0;
     right: 0;
     height: 80px;
@@ -63,7 +63,7 @@ nav{
     font-size: 28px;
     font-weight: 700;
     line-height:1.7;
-    color: #86b300;
+    color: #00001a;
     padding-left: 50px;
     position: relative;
     
@@ -76,6 +76,7 @@ nav{
     width: 80px;
     height: 80px;
     padding: 0 5px;
+    background: #00001a;
        
 }
 
@@ -99,7 +100,7 @@ nav .links li::after{
     content: '';
     width: 0%;
     height: 2px;
-    background: #00bfff;
+    background: white;
     display: block;
     margin: auto;
     transition: 0.5s;
@@ -108,12 +109,12 @@ nav .links li:hover::after{
     width: 100%;
 }
 nav .links li > a{
-    color: white;
+    color: #00001a;
     text-decoration: none;
     font-size: 14px;   
 }
 nav .links li a:hover{
-    color: #00bfff;
+    color: white;
     font-weight: 700;
 }
 .sub-menu{
@@ -121,12 +122,16 @@ nav .links li a:hover{
 }
 nav .links li .sub-menu a{
     font-size: 13px;
+    color: #00001a;
+}
+nav .links li .sub-menu a:hover{
+    color: #FFF;
 }
 
 nav .links li:hover .sub-menu{
     display: block;
     position: absolute;
-    background: #00001a;
+    background: #ffc61a;
     margin-top: 0px;
     margin-left: -15px;
     line-height: 3;
