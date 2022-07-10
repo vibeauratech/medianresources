@@ -291,19 +291,29 @@ button:hover{
     nav :checked ~ .portfolioicon-burger .line:nth-child(2){
         opacity: 0;
 
-    }   
+    }
+    .hero-texts{
+        width: 50%;
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        text-align: left;
+        color:#00001a;
+    }
+       
    
    
     .hero-texts h1{
-        font-size: 32px;
+        font-size: 22px;
         margin-top: 100px;
     }
     .hero-texts p{
-        font-size: 16px;
-        width: 90%;
+        font-size: 14px;
+        width: 100%;
         font-weight: 200;
         margin: 20px auto;
-        line-height: 1.4;
+        line-height: 14px;
     }
     button{
         width: 120px;
