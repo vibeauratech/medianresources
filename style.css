@@ -163,7 +163,7 @@ nav .portfolioicon-burger .line{
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    color: #FFF;
+    color:#00001a;
 }
 
 .hero-texts h1{
@@ -172,7 +172,7 @@ nav .portfolioicon-burger .line{
 }
 .hero-texts p{
     font-size: 20px;
-    font-weight: 200;
+    font-weight: 600;
     margin: 20px auto;
     line-height: 25px;
 }
@@ -877,7 +877,7 @@ hr{
     height: 50vh;
     top: 0;
     background-size: cover;
-    background-image:  linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/new\ farm.jpg);
+    background: #86b300;
     background-position: center center;   
 }
 .about-home h1{
@@ -886,7 +886,7 @@ hr{
     top: 60%;
     transform: translateY(-50%);
     text-align: center;
-    color: #FFF;
+    color: #00001a;
     font-size: 48px;
 }
 .blog-content{
@@ -977,7 +977,7 @@ hr{
     height: 50vh;
     top: 0;
     background-size: cover;
-    background-image:  linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/new\ farm.jpg);
+    background: #86b300;
     background-position: center center; 
 }
 .products-home h1{
@@ -986,7 +986,7 @@ hr{
     top: 60%;
     transform: translateY(-50%);
     text-align: center;
-    color: #FFF;
+    color: #00001a;
     font-size: 48px;
 }
 .products-list{
@@ -1071,7 +1071,7 @@ hr{
     height: 50vh;
     top: 0;
     background-size: cover;
-    background-image:  linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(images/new\ farm.jpg);
+    background: #86b300;
     background-position: center center; 
 }
 .contact-home h1{
@@ -1080,7 +1080,7 @@ hr{
     top: 60%;
     transform: translateY(-50%);
     text-align: center;
-    color: #FFF;
+    color:#00001a;
     font-size: 48px;
 }
 
