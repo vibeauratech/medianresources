@@ -17,7 +17,7 @@
 
 <div class="banner">
     <div class="slider">
-        <img src="images/" id="slideImg">
+        <img src="images/Pet Img.png" id="slideImg">
     </div>
     <div class="overlay">
         <nav >
@@ -51,15 +51,15 @@
             </label>
         </nav> 
         <div class="hero-texts">
-            <h1> Trusted Supplier of Quality Chemicals <br> And Raw Materials</h1>
+            <h1> Trusted Supplier of Quality Chemicals And Raw Materials</h1>
             <p>
                 Distribution and marketing of various chemicals with specialty in
-                Petrochemicals, <br>Allied and Auxilliary chemicals,Pharmaceuticals,Food And <br>
+                Petrochemicals,Allied and Auxilliary chemicals,Pharmaceuticals,<br> Food And
                 Feed Additives.
             </p>
             <div>
-                <button type="button"><span></span> <a href="About.html" style="color:white ;">Learn More</a></button>
-                <button type="button"><span></span> <a href="contact us.html" style="color:white ;">Contact Us</a></button>
+                <button type="button"><span></span> <a href="About.html">Learn More</a></button>
+                <button type="button"><span></span> <a href="contact us.html">Contact Us</a></button>
             </div>
         </div>                
     </div>
@@ -97,7 +97,7 @@
                    <a href="About.html" class="new-btn">READ MORE</a>    
         </div>
         <div class="about-col">
-            <img src="images/maria-lupan-hy97yy3e03A-unsplash.jpg" >
+            <img src="images/about4.png" >
         </div>
     </div>
 </div>
@@ -370,10 +370,10 @@
     var slideImg = document.getElementById("slideImg");
 
     var images = new Array(
-        "images/",
-        "images/",
-        "images/",
-        "images/"
+        "images/Pet Img.png",
+        "images/fol img.png",
+        "images/col img.png",
+        "images/fer img.png"
      );
     
 
@@ -386,7 +386,7 @@
         }
         slideImg.src = images[i];
         i++;
-        setTimeout('slider()',3000);
+        setTimeout('slider()',5000);
     }  
     const root = document.documentElement;
     const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");

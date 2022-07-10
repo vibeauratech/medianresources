@@ -158,20 +158,21 @@ nav .portfolioicon-burger .line{
 }
 
 .hero-texts{
-    width: 100%;
+    width: 50%;
     position: absolute;
     top: 50%;
+    left: 70px;
     transform: translateY(-50%);
-    text-align: center;
+    text-align: left;
     color:#00001a;
 }
 
 .hero-texts h1{
-    font-size: 54px;
+    font-size: 36px;
     margin-top: 40px;
 }
 .hero-texts p{
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
     margin: 20px auto;
     line-height: 25px;
@@ -183,16 +184,16 @@ button{
     margin: 20px 10px;
     border-radius: 25px;
     font-weight: bold;
-    border: 2px solid white;
+    border: 2px solid #00001a;
     background: transparent;
-    color: white;
+    color: #FFF;
     cursor: pointer;
     position: relative;
     overflow: hidden;
 }
 
 span{
-    background:#86b300;
+    background:#00001a;
     height: 100%;
     width: 0;
     border-radius: 25px;
@@ -201,9 +202,12 @@ span{
     bottom: 0;
     z-index: -1;
     transition: 0.5s;
+    
 }
 button:hover span{
     width: 100%;
+    color: #FFF;
+    
 }
 button:hover{
     border: none;
