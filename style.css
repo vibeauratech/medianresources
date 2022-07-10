@@ -53,7 +53,7 @@ nav{
 }
 
 .details-list li{
-    margin-left: 45px;
+    margin-left: 0px;
     font-size: 28px;
     font-weight: 700;
     line-height:1.7;
@@ -143,7 +143,7 @@ nav .links li:hover .sub-menu{
 nav .portfolioicon-burger{
     display: none;
     position: absolute;
-    right: 5%;
+    right: 1%;
     top: 50%;
     transform: translateY(-50%);
     
@@ -151,7 +151,7 @@ nav .portfolioicon-burger{
 nav .portfolioicon-burger .line{
     width: 25px;
     height: 2px;
-    background-color:#00bfff;
+    background-color:#00001a;
     margin: 5px;
     border-radius: 3px;
     transition: all .3s ease-in-out;
@@ -216,12 +216,11 @@ button:hover{
 @media screen and (max-width:768px) {
 
     .details-list li{
-        margin-left: 15px;
+        margin-left: 35px;
         font-size: 20px;
         font-weight: 700;
         line-height:2.2;
-        color: #00bfff;
-        padding-left: 30px;
+        color: #00001a;
         position: relative;
         
     
@@ -229,7 +228,7 @@ button:hover{
     .details-list li img{
         position: absolute;
         top: -20px;
-        left: -35px;
+        left: -50px;
         width: 80px;
         height: 80px;
         padding: 0 5px;
