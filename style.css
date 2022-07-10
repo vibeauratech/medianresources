@@ -293,7 +293,7 @@ button:hover{
 
     }
     .hero-texts{
-        width: 50%;
+        width: 65%;
         position: absolute;
         top: 50%;
         left: 10px;
@@ -301,30 +301,37 @@ button:hover{
         text-align: left;
         color:#00001a;
     }
+    .bat{
+        display: flex;
+        width: 80%;
+    }
        
    
    
     .hero-texts h1{
         font-size: 22px;
         margin-top: 100px;
+        width: 100%;
     }
     .hero-texts p{
         font-size: 14px;
         width: 100%;
-        font-weight: 200;
+        font-weight: 500;
         margin: 20px auto;
         line-height: 14px;
     }
     button{
-        width: 120px;
+        width: 140px;
         padding: 10px 0;
         text-align: center;
-        margin: 14px 7px;
+        margin: 15px 10px;
         border-radius: 25px;
+        font-size: 12px;
+        right: 10px;
         font-weight: bold;
-        border: 2px solid #86b300;
+        border: 2px solid #00001a;
         background: transparent;
-        color: white;
+        color: #FFF;
         cursor: pointer;
         position: relative;
         overflow: hidden;
