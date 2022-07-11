@@ -514,8 +514,8 @@ button:hover{
 }
 .arrow-head h2{
     font-size: 28px;
-
 }
+
 .arrow-head p{
     font-size: 24px;
 }
@@ -976,6 +976,17 @@ hr{
     padding-left: 6px;
     font-size: 12px;
 }
+.affiliate h2{
+    font-size: 36px;  
+}
+.affiliate p{
+    font-size: 18px;   
+}
+
+.affiliate i{
+    text-align: center;
+    font-size: 30px;   
+}
 
 
 @media(max-width: 768px){
@@ -985,6 +996,9 @@ hr{
     .top-row{
         display: flex;
         justify-content:space-evenly;
+    }
+    .affiliate h2{
+        font-size: 22px;  
     }
     
 
