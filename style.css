@@ -7,12 +7,26 @@
     box-sizing: border-box;
       
 }  
+.new-row{
+    width: 90%;
+    margin: auto;
+    margin-top: 0%;
+    display: flex;
+    justify-content: space-between;      
+}
+@media screen and (max-width: 768px){
+    .new-row{
+        flex-direction: column;
+        text-align: left;    
+    }
+} 
 
 .banner{
     width: 100%;
     height: 100vh;
     position: relative;
     overflow: hidden;
+    background: #FFF;
 }
 .slider{
     width: 100%;
@@ -24,6 +38,12 @@
     width: 100%;
     height: 100%;
 }
+
+.banner .blog-content{
+    margin-top: 5%;
+}
+
+
 
 
 nav{
@@ -177,41 +197,7 @@ nav .portfolioicon-burger .line{
     margin: 20px auto;
     line-height: 25px;
 }
-button{
-    width: 200px;
-    padding: 15px 0;
-    text-align: center;
-    margin: 20px 10px;
-    border-radius: 25px;
-    font-weight: bold;
-    border: 2px solid #00001a;
-    background: transparent;
-    color: #FFF;
-    cursor: pointer;
-    position: relative;
-    overflow: hidden;
-}
 
-span{
-    background:#00001a;
-    height: 100%;
-    width: 0;
-    border-radius: 25px;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: -1;
-    transition: 0.5s;
-    
-}
-button:hover span{
-    width: 100%;
-    color: #FFF;
-    
-}
-button:hover{
-    border: none;
-}
 
 @media screen and (max-width:768px) {
 
@@ -435,41 +421,54 @@ button:hover{
     }
 }
 
-.about-us{
-    width: 80%;
+.blog-content{
+    width: 100%;
     margin: auto;
-    padding-top: 0px;
-    padding-bottom: 5px;
+    padding: 50px 0;
+}
+#new-blog{
+    flex-basis: 30%;
+}
+#new-blog h2{
+    font-size: 48px;
+    padding-bottom: 0px;
 }
 
-.about-row{
-    margin-top: 5%;
-    display: flex;
-    justify-content: space-between;
+#new-blog p{
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 30px;
 }
-.about-col{
-    flex-basis: 48%;
-    padding: 30px 2px;
+#new-blog{
+    flex-basis: 50%;
 }
-.about-col img{
+
+.blog-right img{
     width: 100%;
-    height: 440px;
+    height: 28rem;
     object-fit: cover;
 }
-.about-col h1{
-    font-size: 40px;
-    padding-top: 0px;
+.blogright-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+    box-sizing: border-box;
+    color: black;
 }
-.about-col p{
-    padding: 15px 0 25px;
-    line-height: 1.8;
-    font-size: 17px;
+@media screen and (max-width:768px){
+    #new-blog{
+        margin-top: 0px;
+    }
+
 }
+
+
 .new-btn{
     display: inline-block;
     text-decoration: none;
-    color: rgb(70, 69, 69);
-    border: 2px solid rgb(70, 69, 69);
+    color: #00001a;
+    border: 2px solid #00001a;
     padding: 16px 64px;
     font-size: 14px;
     font-weight: bold;       
@@ -480,34 +479,152 @@ button:hover{
 }
 .new-btn:hover{
     color: white;
-    background: rgb(70, 69, 69);
-    border: 1px solid rgb(70, 69, 69);
+    background: #00001a;
+    border: 1px solid #00001a;
 }
-@media(max-width: 768px){
-    .about-row{
-        flex-direction: column;
-        text-align: center;    
+
+
+.pro-con{
+    width: 100%;
+    min-height: 0vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0% 0;
+    margin-top: 1%;
+}
+.pro-box{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.pro-left{
+    flex-basis: 30%;
+    flex-grow: 1;
+    background: transparent;
+    color: white;
+    padding: 0px 0%;
+    margin-right: 5%;
+    min-width: 250px;
+    background: white;
+    box-shadow: 0 0 5px 0px #00001a;
+    text-align: center;
+}
+.pro-left img{
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 25px;
+    background: transparent;
+}
+.pro-left p{
+    background: transparent;
+    font-size: 16px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-top: 25px;
+    border-top: 3px solid #fff;
+}
+
+.pro-center{
+    flex-basis: 30%;
+    flex-grow: 1;
+    background: transparent;
+    color: white;
+    padding: 0px 0%;
+    margin-right: 5%;
+    min-width: 250px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 0 5px 0px #00001a;
+
+}
+.pro-center h3{
+    background: transparent;
+    padding-bottom: 5px;
+}
+
+.pro-center img{
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+    background: transparent;
+    padding-bottom: 25px;
+}
+.pro-center p{
+    background: transparent;
+    font-size: 16px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 3px solid #fff;
+}
+
+@media screen and (max-width:1024px){
+    .pro-left{
+        margin-bottom: 5%;
+        margin-right: 0%;
+        flex-basis: 100%;
     }
-    .about-col h1{
-        padding-top: 0;
+    .pro-right{
+        flex-basis: 100%;
     }
-    .about-col p{
-        font-size: 14px;
-        line-height: 1.6;
+    .pro-center{
+        flex-basis: 100%;
+         margin-bottom: 5%;
+        margin-right: 0%;
     }
-    .about-col img{
-        height: 280px;
+    
+}
+
+.pro-right{
+    flex-basis: 30%;
+    flex-grow: 1;
+    background: transparent;
+    color: white;
+    padding: 0px 0%;
+    min-width: 250px;
+    background: white;
+    text-align: center;
+    box-shadow: 0 0 5px 0px #00001a;
+}
+
+.pro-right img{
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+    padding-bottom: 25px;
+    background: transparent;
+}
+.pro-right p{
+    background: transparent;
+    font-size: 16px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    border-top: 3px solid #fff;
+}
+
+@media screen and (max-width:768px){
+    .pro-right h2{
+        font-size:24px ;
+    }
+    .pro-right h3{
+        font-size:16px ;
+        padding-bottom: 20px;
     }
 }
-@media(max-width: 1024px){
-    .about-col h1{
-        padding-top: 0;
+
+@media screen and (max-width:768px){
+    .pro-left h2{
+        font-size:24px ;
     }
-    .about-col p{
-        font-size: 16px;
-        line-height: 1.6;
+    .pro-left h3{
+        font-size:16px ;
+        padding-bottom: 20px;
     }
 }
+
 
 .arrow {
     text-align: center;
@@ -978,7 +1095,8 @@ hr{
     font-size: 12px;
 }
 .affiliate h2{
-    font-size: 36px;  
+    font-size: 36px;
+    margin-top: -20px;  
 }
 .affiliate p{
     font-size: 18px;   
