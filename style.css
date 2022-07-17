@@ -44,6 +44,9 @@
 }
 
 @media screen and (max-width:768px){
+    .banner .blog-content{
+        margin-top: 15%;
+    }
     .banner .blog-content #new-blog h2{
         font-size: 24px;
         padding-bottom: 5px;
