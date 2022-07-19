@@ -424,8 +424,16 @@ nav .portfolioicon-burger .line{
 }
 @media screen and (max-width:768px){
     #new-blog{
-        margin-top: 0px;
+        margin-top:-20%;
+        text-align: center;
     }
+    #new-blog h2{
+        font-size: 24px;
+        padding: 0;
+        margin-bottom: 2%;
+    }
+
+
 
 }
 
@@ -1083,9 +1091,20 @@ hr{
         display: flex;
         justify-content:space-evenly;
     }
-    .affiliate h2{
-        font-size: 22px;  
+    .affiliate{
+        text-align: center;
     }
+    .affiliate h2{
+        font-size: 18px;  
+    }
+    .affiliate p{
+        margin-top: 2%;
+        margin-bottom: 3%;
+    }
+    .affiliate img{
+        margin-bottom: 3%;
+    }
+
     
 
 }
