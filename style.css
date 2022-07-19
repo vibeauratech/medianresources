@@ -90,7 +90,10 @@
         margin-right: 6%;
     }
 }
-
+.navbar{
+    width: 100%;
+    height: 80px;
+}
 nav{
     z-index: 10;
     background: #ffc61a;
@@ -251,7 +254,6 @@ nav .portfolioicon-burger .line{
 
 .hero-sect{
     background: #86b300;
-    margin-top: 5.9%;
 }
 
 .hero-sect #new-blog{
@@ -262,32 +264,20 @@ nav .portfolioicon-burger .line{
     padding: 3% 0;
 
 }
-@media screen and (max-width:375px){
-    
+@media screen and (max-width:768px){    
 .hero-sect{
     background: #86b300;
-    margin-top: 21%;
 }
     .hero-sect  #new-blog h2{
         font-size: 18px;
+        margin-top: 30%;
     }
     .hero-sect  #new-blog p{
         font-size: 14px;
     }
 }
-@media screen and (max-width:425px){
-    .hero-sect{
-        background: #86b300;
-        margin-top: 18%;
-    }
-        .hero-sect  #new-blog h2{
-            font-size: 18px;
-        }
-        .hero-sect  #new-blog p{
-            font-size: 14px;
-        }
-    
-}
+
+
 
 
 .marquee{
