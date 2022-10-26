@@ -384,6 +384,7 @@
 </footer>
 
 <script>
+    
     var slideImg = document.getElementById("slideImg");
 
     var images = new Array(
@@ -403,7 +404,8 @@
         slideImg.src = images[i];
         i++;
         setTimeout('slider()',5000);
-    }  
+    } 
+     
     const root = document.documentElement;
     const marqueeElementsDisplayed = getComputedStyle(root).getPropertyValue("--marquee-elements-displayed");
     const marqueeContent = document.querySelector(".marquee-content");
@@ -415,7 +417,7 @@
          
 </script>
 
-<link rel="stylesheet" href="script.js">
+<script src="script.js"></script>
 
 </body>  
 </html>

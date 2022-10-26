@@ -212,6 +212,7 @@ nav .portfolioicon-burger .line{
         overflow: hidden;
         transition: all .5s ease-in-out;
     }
+    
     nav .links a{
         font-size: 20px;
         color: white;
@@ -229,6 +230,7 @@ nav .portfolioicon-burger .line{
         display: block;
         margin-right: 0px;
     }
+
     #sign-up{
         display: none;
     }
