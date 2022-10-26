@@ -13,56 +13,51 @@
 </head> 
 
 <body onload="slider()">
-    <div class="navbar">
-        <nav >
-            <input id="portfolionav-toggle" type="checkbox">
-            <a href="#" class="logo">
-                <img src="images/median.svg">
-               <h1>MEDIAN RESOURCES LLC</h1>
-            </a>    
-            <ul class="links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="About.html">About Us</a></li>
-                <li><a href="Products.html">Products</a>
-                    <div class="sub-menu">
-                        <ul>
-                            <li><a href="Products.html">Petrochemicals</a></li>
-                            <li><a href="Products.html">Pharmaceuticals</a></li>
-                            <li><a href="Products.html">Feed Additives</a></li>
-                            <li><a href="Products.html">Farm Produce</a></li>
-                        </ul>
-                    </div>             
-                </li>
-                <li><a href="">News</a></li>
-                <li><a href="contact us.html">Contact</a></li>                         
-            </ul>
-            
-            <label for="portfolionav-toggle" class="portfolioicon-burger">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </label>
-        </nav>      
-       </div> 
-       
-       
-<div class="hero-sect">
-    <div class="new-row">
-        <div class="blog-left" id="new-blog">
-            <h2>Trusted Supplier of Quality Chemicals And Raw Materials</h2>
+
+    <nav>
+        <input id="portfolionav-toggle" type="checkbox">
+        <a href="index.html" class="logo"><img src="images/median.svg" alt=""><span>Median Resources LLC</span></a>
+
+      
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About.html">About Us</a></li>
+            <li><a href="Products.html">Products</a>
+                <div class="sub-menu">
+                    <ul>
+                        <li><a href="Products.html">Petrochemicals</a></li>
+                        <li><a href="Products.html">Pharmaceuticals</a></li>
+                        <li><a href="Products.html">Feed Additives</a></li>
+                        <li><a href="Products.html">Farm Produce</a></li>
+                    </ul>
+                </div>             
+            </li>
+            <li><a href="">News</a></li>
+            <li><a href="contact us.html">Contact</a></li>                         
+        </ul>
+
+        <label for="portfolionav-toggle" class="portfolioicon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+        </label>
+    </nav>
+
+    <div class="hero-section">
+        <div class="hero-left">
+            <h2>Trusted Supplier of Quality Chemicals And Raw Materials.</h2>
             <p>
                 Distribution and marketing of various chemicals with specialty in
                  Petrochemicals, Allied and Auxilliary chemicals, Pharmaceuticals, Food And
                  Feed Additives.              
-           </p>                           
-        </div>       
-        <div class="blog-right">
-            <img src="images/fol img.png" id="slideImg">           
-        </div>  
+           </p>                
+        </div>
+        <div class="hero-right">
+            <img src="images/fol img.png" id="slideImg">  
+        </div>
     </div>
 
-    </div>
-</div>
+
 
 <div class="marquee">
     <ul class="marquee-content">
@@ -388,7 +383,6 @@
     var slideImg = document.getElementById("slideImg");
 
     var images = new Array(
-        "images/Pet Img.png",
         "images/fol img.png",
         "images/fer img.png"
      );

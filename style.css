@@ -22,80 +22,24 @@
 } 
 
 .logo{
-    float: left;
     display: flex;
-    color:white;    
-    font-size: 24px; 
-    font-weight: 700;
-    margin-left: 0;
-    margin-top: -1.4%;
-    cursor: pointer;
+    align-items: center;
 }
 
-.logo h1{
-    color: #00001a;
-    font-size: 24px;
-    padding-bottom: 5%;
-    
-}
 .logo img{
-    width: 17%;
-    height: 4rem;
-    background: #00001a;
-    margin-right: 15%;
-}
-@media screen and (max-width: 425px){
-    .logo{
-       padding-bottom: 3%;
-    }
-    .logo h1{
-        font-size:20px;
-    padding-bottom: 5%;
-    }
-    .logo img{
-        width: 20%;
-        height: 3rem;
-        background: #00001a;
-        margin-right: 15%;
-    }
+    width: 45px;
+    height: 40px;
+    margin-right: 10px;
 }
 
-@media screen and (max-width: 768px){
-    .logo{
-        margin-top: -1.8%;
-    }
-    .logo h1{
-        font-size:20px;
-    padding-bottom: 5%;
-    }
-    .logo img{
-        width: 20%;
-        height: 4rem;
-        background: #00001a;
-        margin-right: 15%;
-    }
+.logo span{
+    font-size: 14px;
+    border-radius: 10px;
+    color: #000;
 }
-@media screen and (max-width: 425px){
-    .logo{
-       padding-bottom: 3%;
-    }
-    .logo h1{
-        font-size:18px;
-    padding-bottom: 5%;
-    }
-    .logo img{
-        width: 20%;
-        height: 3rem;
-        background: #00001a;
-        margin-right: 6%;
-    }
-}
-.navbar{
-    width: 100%;
-    height: 80px;
-}
+
 nav{
-    z-index: 10;
+    z-index: 1;
     background: #ffc61a;
     left: 0;
     right: 0;
@@ -103,13 +47,14 @@ nav{
     width: 100%;
     position: fixed;
     top: 0;
-    padding: 1.5rem 7%;
+    padding: 1.5rem 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family:'MonumentExtended-Ultrabold';
 }
 
-
-
 nav .links{
-    float: right;
     padding: 0;
     margin: 0;
     display: flex;
@@ -118,6 +63,7 @@ nav .links{
     justify-content: space-around;
     align-items: center;
 }
+
 nav .links li{
     list-style: none;
     display: inline-block; 
@@ -254,31 +200,40 @@ nav .portfolioicon-burger .line{
    
 }
 
-.hero-sect{
+.hero-section{
     background: #86b300;
+    padding: 5%;
+    margin: 0 auto;
+    margin-top:80px ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.hero-sect #new-blog{
-    padding: 3% 0;
-
-}
-.hero-sect .blog-right{
-    padding: 3% 0;
-
-}
-@media screen and (max-width:768px){    
-.hero-sect{
-    background: #86b300;
-}
-    .hero-sect  #new-blog h2{
-        font-size: 18px;
-        margin-top: 30%;
-    }
-    .hero-sect  #new-blog p{
-        font-size: 14px;
-    }
+.hero-left{
+    flex-basis: 45%;
 }
 
+.hero-left h2{
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.hero-left p{
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+
+
+.hero-right{
+    flex-basis: 45%;
+}
+
+.hero-right img{
+    width: 100%;
+    height: 80%;
+}
 
 
 
