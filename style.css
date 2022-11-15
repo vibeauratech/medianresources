@@ -27,13 +27,14 @@
 }
 
 .logo img{
-    width: 45px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     margin-right: 10px;
 }
 
 .logo span{
-    font-size: 14px;
+    font-size: 24px;
+    font-weight: bold;
     border-radius: 10px;
     color: #000;
 }
@@ -180,9 +181,22 @@ nav .portfolioicon-burger .line{
     #sign-up{
         display: none;
     }
+
     .logo{
         float: left;
         margin-left: -15px;
+    }
+
+    .logo img{
+        width: 45px;
+        height: 40px;
+        margin-right: 10px;
+    }
+    
+    .logo span{
+        font-size: 18px;
+        font-weight: bold;
+        color: #000;
     }
     nav :checked ~ .links {
         bottom: 0;
@@ -224,8 +238,6 @@ nav .portfolioicon-burger .line{
     margin-top: 10px;
 }
 
-
-
 .hero-right{
     flex-basis: 45%;
 }
@@ -235,6 +247,39 @@ nav .portfolioicon-burger .line{
     height: 80%;
 }
 
+
+@media screen and (max-width:768px){
+    .hero-section{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-left{
+        flex-basis: 100%;
+        margin-top: 10%;
+    }
+
+    .hero-right{
+        flex-basis: 100%;
+        margin-top: 15%;
+    }
+    
+    .hero-left h2{
+        font-size: 24px;
+        font-weight: bold;
+    }
+    
+    .hero-left p{
+        font-size: 16px;
+        margin-top: 10px;
+    }
+    
+    .hero-right{
+        flex-basis: 45%;
+    }
+    
+
+}
 
 
 .marquee{
@@ -380,8 +425,9 @@ nav .portfolioicon-burger .line{
         margin-bottom: 2%;
     }
 
-
-
+    .blog-right img{
+        margin-top: 12%;
+    }
 }
 
 
